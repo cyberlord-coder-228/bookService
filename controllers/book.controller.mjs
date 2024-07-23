@@ -36,6 +36,16 @@ async function updateBookById(req, res) {
  }
 }
 
-export { get, getById, createBook, updateBookById };
+async function deleteById(req, res) {
+ try {
+  await booksService.deleteById(req.params.id)
+  res.send(`Book with id #${req.params.id} was succcessfully deleted`);
+ } catch(e) {
+  res.status(404).send(`Book #${req.params.id} not found`);
+  console.error('Error while getting book: ', e);
+ }
+}
+
+export { get, getById, createBook, updateBookById, deleteById };
 
 

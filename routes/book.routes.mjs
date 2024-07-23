@@ -9,6 +9,7 @@ router.get('/', book.get);
 router.get('/:id', book.getById);
 router.post('/', validate(bookSchemas.create), book.createBook);
 router.put('/:id', validate(bookSchemas.update), book.updateBookById);
+router.delete('/:id', book.deleteById);
 
 export { router };
 

@@ -31,6 +31,14 @@ async function updateBookById(id, data) {
   return updatedBook;
 };
 
-export { getAllBooks, getBookById, createBook, updateBookById };
+async function deleteById(id) {
+  const books = bookLib.get();
+  const bookIndex = books.findIndex(b => b._id === parseInt(id));
+  if (bookIndex === -1) throw new Error('Book not found');
+  books.splice(bookIndex, 1);
+  bookLib.write(books);
+}
+
+export { getAllBooks, getBookById, createBook, updateBookById, deleteById };
 
 

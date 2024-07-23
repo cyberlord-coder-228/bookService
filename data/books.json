@@ -17,23 +17,6 @@
     ]
   },
   {
-    "_id": 2,
-    "title": "t",
-    "pageCount": 592,
-    "publishedDate": {
-      "date": "2011-01-14T00:00:00.000-0800"
-    },
-    "thumbnailUrl": "https://s3.amazonaws.com/AKIAJC5RLADLUMVRPFDQ.book-thumb-images/ableson2.jpg",
-    "shortDescription": "Android in Action, Second Edition is a definitive guide...",
-    "longDescription": "When it comes to mobile apps, Android is the new frontier...",
-    "status": "PUBLISH",
-    "authors": [
-      "W. Frank Ableson",
-      "Robi Sen",
-      "Chris King"
-    ]
-  },
-  {
     "_id": 3,
     "title": "Specification by Example",
     "pageCount": 322,
