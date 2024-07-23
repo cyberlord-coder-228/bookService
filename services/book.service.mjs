@@ -21,5 +21,16 @@ async function createBook(data) {
  return newBook;
 }
 
-export { getAllBooks, getBookById, createBook };
+async function updateBookById(id, data) {
+ const books = bookLib.get();
+  const bookIndex = books.findIndex(b => b._id === parseInt(id));
+  if (bookIndex === -1) throw new Error('Book not found');
+  const updatedBook = { ...books[bookIndex], ...data };
+  books[bookIndex] = updatedBook;
+  bookLib.write(books);
+  return updatedBook;
+};
+
+export { getAllBooks, getBookById, createBook, updateBookById };
+
 

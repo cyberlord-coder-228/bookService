@@ -8,5 +8,6 @@ const router = express.Router();
 router.get('/', book.get);
 router.get('/:id', book.getById);
 router.post('/', validate(bookSchema), book.createBook);
+router.put('/:id', book.updateBookById);
 
 export { router };

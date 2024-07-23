@@ -27,5 +27,15 @@ async function createBook(req, res) {
  }
 }
 
-export { get, getById, createBook };
+async function updateBookById(req, res) {
+ try {
+  res.send(await booksService.updateBookById(req.params.id, req.body));
+ } catch(e) {
+  res.status(400).send('Book was not updated');
+  console.error('Error while updating book: ', e);
+ }
+}
+
+export { get, getById, createBook, updateBookById };
+
 
