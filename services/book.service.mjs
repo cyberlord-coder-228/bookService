@@ -12,4 +12,14 @@ async function getBookById(id) {
   return book;
 }
 
-export { getAllBooks };
+async function createBook(data) {
+ const books = bookLib.get();
+ const _id = books.length;
+  const newBook = { _id, ...data };
+  books.push(newBook);
+  bookLib.write(books);
+ return newBook;
+}
+
+export { getAllBooks, getBookById, createBook };
+

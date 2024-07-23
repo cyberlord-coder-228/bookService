@@ -18,4 +18,14 @@ async function getById(req, res) {
  }
 }
 
-export { get, getById };
+async function createBook(req, res) {
+ try {
+  res.send(await booksService.createBook(req.body));
+ } catch(e) {
+  res.status(400).send('Book was not created');
+  console.error('Error while creating new book: ', e);
+ }
+}
+
+export { get, getById, createBook };
+
