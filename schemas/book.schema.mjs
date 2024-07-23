@@ -1,6 +1,6 @@
 import Joi from 'joi';
 
-const bookSchema = Joi.object({
+const create = Joi.object({
  title: Joi.string().required(),
  pageCount: Joi.number().required(),
  publishedDate: Joi.object({
@@ -13,4 +13,18 @@ const bookSchema = Joi.object({
  authors: Joi.array().items(Joi.string()).required(),
 });
 
-export default bookSchema;
+const update = Joi.object({
+ _id: Joi.number().optional(),
+ title: Joi.string().optional(),
+ pageCount: Joi.number().optional(),
+ publishedDate: Joi.object({
+   date: Joi.string().isoDate().optional(),
+ }).optional(),
+ thumbnailUrl: Joi.string().uri().optional(),
+ shortDescription: Joi.string().optional(),
+ longDescription: Joi.string().optional(),
+ status: Joi.string().valid('PUBLISH', 'DRAFT').optional(),
+ authors: Joi.array().items(Joi.string()).optional(),
+});
+
+export { create, update } ;
