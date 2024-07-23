@@ -1,0 +1,85 @@
+[
+  {
+    "_id": 1,
+    "title": "Unlocking Android",
+    "pageCount": 416,
+    "publishedDate": {
+      "date": "2009-04-01T00:00:00.000-0700"
+    },
+    "thumbnailUrl": "https://s3.amazonaws.com/AKIAJC5RLADLUMVRPFDQ.book-thumb-images/ableson.jpg",
+    "shortDescription": "Unlocking Android: A Developer's Guide",
+    "longDescription": "Android is an open source mobile phone platform based OS...",
+    "status": "PUBLISH",
+    "authors": [
+      "W. Frank Ableson",
+      "Charlie Collins",
+      "Robi Sen"
+    ]
+  },
+  {
+    "_id": 2,
+    "title": "Android in Action, Second Edition",
+    "pageCount": 592,
+    "publishedDate": {
+      "date": "2011-01-14T00:00:00.000-0800"
+    },
+    "thumbnailUrl": "https://s3.amazonaws.com/AKIAJC5RLADLUMVRPFDQ.book-thumb-images/ableson2.jpg",
+    "shortDescription": "Android in Action, Second Edition is a definitive guide...",
+    "longDescription": "When it comes to mobile apps, Android is the new frontier...",
+    "status": "PUBLISH",
+    "authors": [
+      "W. Frank Ableson",
+      "Robi Sen",
+      "Chris King"
+    ]
+  },
+  {
+    "_id": 3,
+    "title": "Specification by Example",
+    "pageCount": 322,
+    "publishedDate": {
+      "date": "2011-06-03T00:00:00.000-0700"
+    },
+    "thumbnailUrl": "https://s3.amazonaws.com/AKIAJC5RLADLUMVRPFDQ.book-thumb-images/adzic.jpg",
+    "shortDescription": "Specification by Example is a must-have for any team...",
+    "longDescription": "Bridging the communication gap between business and IT...",
+    "status": "PUBLISH",
+    "authors": [
+      "Gojko Adzic"
+    ]
+  },
+  {
+    "_id": 4,
+    "title": "Flex 3 in Action",
+    "pageCount": 576,
+    "publishedDate": {
+      "date": "2009-02-02T00:00:00.000-0800"
+    },
+    "thumbnailUrl": "https://s3.amazonaws.com/AKIAJC5RLADLUMVRPFDQ.book-thumb-images/ahmed.jpg",
+    "shortDescription": "New edition of the bestselling Flex book from Manning...",
+    "longDescription": "Using Flex, you can create dazzling, visually rich...",
+    "status": "PUBLISH",
+    "authors": [
+      "Tariq Ahmed with Jon Hirschi",
+      "Faisal Abid"
+    ]
+  },
+  {
+    "_id": 5,
+    "title": "Flex 4 in Action",
+    "pageCount": 600,
+    "publishedDate": {
+      "date": "2010-11-15T00:00:00.000-0800"
+    },
+    "thumbnailUrl": "https://s3.amazonaws.com/AKIAJC5RLADLUMVRPFDQ.book-thumb-images/ahmed2.jpg",
+    "shortDescription": "Flex 4 in Action is a comprehensive tutorial that introduces...",
+    "longDescription": "Flex 4 in Action teaches you how to create high-quality...",
+    "status": "PUBLISH",
+    "authors": [
+      "Tariq Ahmed",
+      "Dan Orlando",
+      "John C. Bland II",
+      "Joel Hooks"
+    ]
+  }
+]
