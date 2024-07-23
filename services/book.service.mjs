@@ -1,6 +1,8 @@
-import bookLib from "../lib/book.lib";
+import * as bookLib from "../lib/book.lib.mjs";
 
-export async function getAllBooks() {
+async function getAllBooks() {
 	const books = bookLib.get();
 	return books;
 }
+
+export { getAllBooks };

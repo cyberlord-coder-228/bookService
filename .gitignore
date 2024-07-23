@@ -3,8 +3,9 @@ node_modules/
 package-lock.json
 package.json
 
-# Linter file
+# Linter files
 .eslint.js
+eslint.config.mjs
 
 # Private info
 .env
