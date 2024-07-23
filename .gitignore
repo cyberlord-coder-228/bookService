@@ -6,4 +6,5 @@ package.json
 # Linter file
 .eslint.js
 
-
+# Private info
+.env
