@@ -10,6 +10,7 @@ import { router } from './routes/book.routes.mjs';
 const PORT = process.env.PORT || 3000;
 
 const app = express();
+app.use(express.json());
 
 app.use('/', router); // /api
 app.listen(PORT, () => {
